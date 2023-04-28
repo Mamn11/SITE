@@ -1,0 +1,197 @@
+/* reset do layout da pagina */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+.box{
+    height: 450px;
+    width: 300px;
+    box-shadow: 10px 25px 35px black;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.prato-1{
+    background-image:url(prato1.jpg);
+    
+   
+}
+.prato-2{
+    background-image: url(prato2.jpg);
+    
+}
+
+
+
+.prato-3{
+
+    background-image:  url(prato3.jpg);
+    
+    
+}
+
+.prato-4{
+
+background-image: url(prato4.jpg);
+
+
+}
+
+
+#container{
+    /* define o elemento como bloco e o layout usado para os filhos */
+    display: flex;
+    /* define o eixo principal dos elementos (linha: padrao) */
+    flex-direction: row;
+    height: 600px;
+
+    /* define o alinhamento dos elementos no eixo prinicpal (na horizontal) */
+    justify-content: center;
+        /* define o alinhamento dos elementos no eixo secundario (na vertical) */
+    align-items: center;
+    /* define espaçamento entre os elementos filhos  */
+    column-gap: 50px;
+    
+    
+
+}
+
+#diversos{
+    
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 60px;
+    font-family: 'Bruno Ace SC', cursive;
+font-family: 'Pacifico', cursive;
+
+
+
+   
+}
+
+.opcao1{
+    
+    background: #f8ff00 0%;
+    box-shadow: 5px 0px 25px black;
+    cursor: pointer;
+    transition: all 0.5s;
+cursor: pointer;
+   
+    
+    
+    
+}
+
+.opcao2{
+    background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+    box-shadow: 5px 0px 25px black;
+    transition: all 0.5s;
+cursor: pointer;
+    
+
+    
+}
+.opcao3{
+    
+    background: #3ad59f 100%;
+    box-shadow: 5px 0px 25px black;
+    transition: all 0.5s;
+cursor: pointer;
+    
+ 
+}
+.setor{
+    height: 200px;
+    width: 330px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcao1,.opcao2,.opcao3{
+    border-radius: 45px 10px;
+ /* thick: bordar grossa - groove: borda entaem aba */
+ /* border-top: thick groove white;
+ border-left: thick groove white;
+ border-bottom: thick groove white;
+ border-right: thick groove white; */
+ 
+
+}
+
+#stop{
+    clear: both;
+}
+
+#menu {
+   
+    margin-top: 20px; 
+
+}
+
+#menu ul {
+    /* retira marcadores da lista */
+    list-style: none;
+    background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+
+
+}
+
+#menu ul li {
+display: table-cell;
+text-align: center;
+vertical-align: middle;
+width: 150px;
+font-size: 21px;
+font-weight: bold;
+font-family: 'Bruno Ace SC', cursive;
+font-family: 'Pacifico', cursive;
+}
+
+
+h1{
+    text-align: center;
+    background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+    font-family: 'Bruno Ace SC', cursive;
+font-family: 'Pacifico', cursive;
+   
+
+}
+
+
+#menu ul li:hover {
+   box-shadow: 5px 0px 25px black;
+    cursor: pointer;
+    border: 70%;
+    transition: 0.2s;
+
+
+
+
+}
+
+.opcao1:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+
+}
+
+.opcao2:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+
+}
+
+.opcao3:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+
+}
